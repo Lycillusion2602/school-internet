@@ -1,0 +1,24 @@
+# 依赖（本项目零依赖，一般不会生成）
+node_modules/
+
+# 运行日志（整目录忽略：含 .log/.txt/心跳锁/其它临时输出）
+logs/
+
+# 真实配置含密码，不入库
+config.json
+
+# 本地敏感记录：网卡 MAC / 内网 IP / 路由表 / 抓包原始数据
+docs/network-recon.txt
+*.har
+.env
+.env.*
+
+# 本地编译产物（源码在 native/，用 node scripts/build-launcher.js 自行构建）
+bin/*.exe
+
+# 临时 / 调试
+*.tmp
+*.bak
+*.pid
+.DS_Store
+Thumbs.db

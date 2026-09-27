@@ -1,0 +1,21 @@
+{
+  "name": "school-internet",
+  "version": "1.0.0",
+  "description": "校园网 Dr.COM Portal 自动认证守护 —— 免浏览器、掉线自动重连、休眠唤醒后自动恢复",
+  "private": true,
+  "bin": {
+    "schoolnet": "src/cli.js"
+  },
+  "scripts": {
+    "status": "node src/cli.js status",
+    "login": "node src/cli.js login",
+    "logout": "node src/cli.js logout",
+    "once": "node src/cli.js once",
+    "daemon": "node src/cli.js daemon",
+    "ip": "node src/cli.js ip"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

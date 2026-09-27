@@ -1,0 +1,35 @@
+{
+  "portal": {
+    "comment": "认证门户地址（Dr.COM 城市热点）。一般不需要改。",
+    "host": "10.10.90.2",
+    "eportalPort": 801,
+    "legacyPort": 80
+  },
+  "account": {
+    "username": "240xxxxxx",
+    "password": "PASTE_YOUR_PASSWORD_HERE",
+    "service": "dx",
+    "ip": "auto",
+    "serviceComment": "运营商后缀：校园用户=campus, 电信=dx, 联通=lt, 移动=yd。ip=auto 表示自动识别本机 IP。"
+  },
+  "behavior": {
+    "checkIntervalSec": 40,
+    "connectivityTimeoutMs": 5000,
+    "maxRetriesPerCycle": 3,
+    "retryBackoffSec": [2, 5, 10],
+    "resumeWakeDetect": true,
+    "resumeGapThresholdSec": 90,
+    "wakeRecoverWindowSec": 90,
+    "wakeRecoverGapSec": 4,
+    "behaviorComment": "resumeGapThresholdSec=睡眠窗超过该秒数判定为休眠唤醒；wakeRecoverWindowSec=唤醒后持续恢复的总窗口；wakeRecoverGapSec=唤醒恢复时每次重试的间隔。"
+  },
+  "healthCheckUrls": [
+    "http://connectivitycheck.gstatic.com/generate_204",
+    "http://www.msftconnecttest.com/connecttest.txt",
+    "http://captive.apple.com/hotspot-detect.html"
+  ],
+  "log": {
+    "dir": "./logs",
+    "maxDays": 14
+  }
+}

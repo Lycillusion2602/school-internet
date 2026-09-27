@@ -1,0 +1,9 @@
+# 本项目是 Windows 专用工具。禁止 git 改动文件字节内容（含行尾转换），
+# 避免 .cmd / .ps1 被转成 LF 后在 cmd.exe / PowerShell 里行为异常，
+# 也避免每次 add / checkout 满屏 CRLF-LF 警告。
+* -text
+
+# 明确标记二进制文件，防止 git 把它们当文本处理
+*.exe binary
+*.png binary
+*.jpg binary
